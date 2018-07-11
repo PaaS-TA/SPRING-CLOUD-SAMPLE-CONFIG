@@ -46,3 +46,11 @@ datasource:
     url: jdbc:mysql://115.68.46.219:3306/portaldb
     username: testuser
     password: 'testuser'
+jpa:
+  database: mysql
+  show-sql: true
+  hibernate:
+    ddl-auto: none
+    naming:
+      strategy: org.hibernate.dialect.MySQL5Dialect
+  generate-ddl: false
