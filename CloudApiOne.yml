@@ -5,7 +5,6 @@ spring:
   boot:
     #Spring boot admin settings
     admin:
-      url: http://localhost:2223
       routes:
         endpoints: env,metrics,trace,dump,jolokia,info,configprops,trace,logfile,refresh,flyway,liquibase,heapdump,loggers,auditevents,hystrix.stream,docs
         #Timeintervalin ms to update the status of App
