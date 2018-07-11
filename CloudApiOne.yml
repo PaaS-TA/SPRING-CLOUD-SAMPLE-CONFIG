@@ -18,6 +18,7 @@ spring:
         #Read Timeout in ms when App's status and info
         read-timeout: 5000
       metadata-keys-to-sanitize: .password$,.*secret$,.*key$,.$token$,.credentials.,.*vcap_services$
+
 ##INFRA_ADMIN Settings
 project:
   name: CloudApiOne
