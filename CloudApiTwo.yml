@@ -18,6 +18,7 @@ spring:
         #Read Timeout in ms when App's status and info
         read-timeout: 5000
       metadata-keys-to-sanitize: .password$,.*secret$,.*key$,.$token$,.credentials.,.*vcap_services$
+
 ##INFRA_ADMIN Settings
 project:
   name: spring-cloud-api-two
@@ -43,9 +44,10 @@ management:     # If you set off security...
 datasource:
   portal:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://115.68.46.219:3306/portaldb
+    url: jdbc:mysql://115.68.46.219:3306/testdb
     username: testuser
     password: 'testuser'
+
 jpa:
   database: mysql
   show-sql: true
