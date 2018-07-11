@@ -5,7 +5,7 @@ spring:
   boot:
     #Spring boot admin settings
     admin:
-      url: http://localhost:2223
+#      url: http://localhost:2223
       routes:
         endpoints: env,metrics,trace,dump,jolokia,info,configprops,trace,logfile,refresh,flyway,liquibase,heapdump,loggers,auditevents,hystrix.stream,docs
         #Timeintervalin ms to update the status of App
@@ -20,9 +20,9 @@ spring:
       metadata-keys-to-sanitize: .password$,.*secret$,.*key$,.$token$,.credentials.,.*vcap_services$
 ##INFRA_ADMIN Settings
 project:
-  name: paasta-web-admin
-  artifactId: paasta-web-admin
-  description: paasta web admin  ui service
+  name: spring-cloud-ui
+  artifactId: spring-cloud-ui
+  description: spring-cloud-ui
 info:
   app:
     encoding: Encoding - UTF-8
