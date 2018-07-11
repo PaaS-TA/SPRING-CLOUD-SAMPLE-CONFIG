@@ -41,3 +41,5 @@ management:     # If you set off security...
   security:
     enabled: false
 
+
+dashboard: 'CloudApiOne Dashboard'
