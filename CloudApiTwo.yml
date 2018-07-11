@@ -40,3 +40,9 @@ management:     # If you set off security...
   security:
     enabled: false
 
+datasource:
+  portal:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://115.68.46.219:3306/portaldb
+    username: testuser
+    password: 'testuser'
