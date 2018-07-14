@@ -1,7 +1,7 @@
 # Spring properties
 spring:
   application:
-    name: CloudUi  # Identify this application
+    name: CloudEureka  # Identify this application
   boot:
     #Spring boot admin settings
     admin:
