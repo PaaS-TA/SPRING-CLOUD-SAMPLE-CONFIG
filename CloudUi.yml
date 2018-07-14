@@ -7,8 +7,8 @@ spring:
     admin:
 #      url: http://localhost:2223
       routes:
-        #endpoints: env,metrics,trace,dump,jolokia,info,configprops,trace,logfile,refresh,flyway,liquibase,heapdump,loggers,auditevents,hystrix.stream,docs
-        endpoints: env,refresh,docs
+        endpoints: env,metrics,trace,dump,jolokia,info,configprops,trace,logfile,refresh,flyway,liquibase,heapdump,loggers,auditevents,hystrix.stream,docs
+        #endpoints: env,refresh,docs
         #Timeintervalin ms to update the status of App
       monitor:
         perio: 10000
@@ -26,7 +26,8 @@ project:
   description: spring-cloud-ui
 info:
   app:
-    encoding: Encoding - UTF-8
+    encoding: Encoding - EUC-KR
+    #encoding: Encoding - UTF-8
   java:
     source: Source - java ver
     target: Instance1 - Java ver
