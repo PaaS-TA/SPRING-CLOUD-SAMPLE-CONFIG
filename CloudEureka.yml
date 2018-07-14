@@ -19,6 +19,23 @@ spring:
         read-timeout: 5000
       metadata-keys-to-sanitize: .password$,.*secret$,.*key$,.$token$,.credentials.,.*vcap_services$
 ##INFRA_ADMIN Settings
+server:
+  port: ${PORT:2221}
+# Configure this Discovery Server
+eureka:
+  server:
+    enableSelfPreservation: true
+  instance:
+    appname: ${spring.application.name}
+    hostname: ${spring.cloud.client.hostname}
+    preferIpAddress: true
+  client:  # Standalone mode (not a client, don't register with itself)
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:  # It must set variable server port when it registers itself
+      defaultZone: http://127.0.0.1:2221/eureka/
+    healthcheck:
+      enabled: true
 project:
   name: spring-cloud-eureka
   artifactId: spring-cloud-eureka
