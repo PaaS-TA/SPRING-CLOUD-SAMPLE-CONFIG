@@ -26,8 +26,8 @@ project:
   description: spring-cloud-ui
 info:
   app:
-    #encoding: Encoding - EUC-KR
-    encoding: Encoding - UTF-8
+    encoding: Encoding - EUC-KR
+    #encoding: Encoding - UTF-8
   java:
     source: Source - java ver
     target: Instance1 - Java ver
