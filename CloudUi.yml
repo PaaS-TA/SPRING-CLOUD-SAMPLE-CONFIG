@@ -8,7 +8,7 @@ spring:
 #      url: http://localhost:2223
       routes:
         #endpoints: env,metrics,trace,dump,jolokia,info,configprops,trace,logfile,refresh,flyway,liquibase,heapdump,loggers,auditevents,hystrix.stream,docs
-        endpoints: env
+        endpoints: env,refresh,docs
         #Timeintervalin ms to update the status of App
       monitor:
         perio: 10000
