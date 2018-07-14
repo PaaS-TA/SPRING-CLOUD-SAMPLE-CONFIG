@@ -18,13 +18,7 @@ spring:
         #Read Timeout in ms when App's status and info
         read-timeout: 5000
       metadata-keys-to-sanitize: .password$,.*secret$,.*key$,.$token$,.credentials.,.*vcap_services$
-# Discovery Server Access
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://127.0.0.1:2221/eureka/
-  instance:
-    hostname: ${spring.cloud.client.hostname}
+
 ##INFRA_ADMIN Settings
 project:
   name: spring-cloud-admin
