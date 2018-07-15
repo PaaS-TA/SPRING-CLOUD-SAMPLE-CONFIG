@@ -55,7 +55,7 @@ jpa:
   database: mysql
   show-sql: true
   hibernate:
-    ddl-auto: none
+    ddl-auto: create-drop
     naming:
       strategy: org.hibernate.dialect.MySQL5Dialect
   generate-ddl: false
