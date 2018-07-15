@@ -42,10 +42,14 @@ management:     # If you set off security...
 
 datasource:
   portal:
+    #driver-class-name: com.mysql.jdbc.Driver
+    #url: jdbc:mysql://115.68.46.219:3306/testdb
+    #username: testuser
+    #password: 'testuser'
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://115.68.46.219:3306/testdb
-    username: testuser
-    password: 'testuser'
+    url: jdbc:mysql://${vcap.services.mysql-service.credentials.hostname}:${vcap.services.mysql-service.credentials.port}/${vcap.services.mysql-service.credentials.name}
+    username: ${vcap.services.mysql-service.credentials.username}
+    password: ${vcap.services.mysql-service.credentials.password}
 
 jpa:
   database: mysql
